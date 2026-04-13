@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ANN April App - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Site under repair</h1>
+
+<div class="app-container">
+
+    <div id="screen-home" class="screen active">
+        <div class="text-center">
+            <h1 style="font-size: 2.5em; margin-bottom: 5px;">🌍</h1>
+            <h2>African Neonatal Network (ANN)</h2>
+            <h3 class="text-muted">April 2026 – Pilot System</h3>
+        </div>
+
+        <div class="alert-box">
+            <strong>This is a simple system to help you:</strong>
+            <ul style="margin: 10px 0 0 0; padding-left: 20px;">
+                <li>Understand what to do</li>
+                <li>Know when to do it</li>
+                <li>Improve care together</li>
+            </ul>
+        </div>
+
+        <p style="text-align: center; font-weight: bold;">👉 Each month, you will have a small number of clear tasks.</p>
+        <p>Choose your role & language:</p>
+
+        <button class="btn btn-purple" onclick="navTo('screen-faculty')">
+            🟪 Faculty / National Lead<br>
+            <span style="font-weight: normal; font-size: 0.85em; display: block; margin-top: 5px;">(For national leads and ANN faculty)</span>
+        </button>
+
+        <a href="./qi-en.html" class="btn btn-blue">
+            🟦 Hospital QI Team (English)<br>
+            <span style="font-weight: normal; font-size: 0.85em; display: block; margin-top: 5px;">(For QI teams working at ANN hospitals)</span>
+            <span class="flags">🇿🇼 🇿🇲 🇧🇼 🇰🇪 🇳🇬 🇺🇬</span>
+        </a>
+
+        <a href="qi-rw.html" class="btn btn-blue">
+            🟦 Ikipe ya QI y'Ibitaro (Kinyarwanda)<br>
+            <span style="font-weight: normal; font-size: 0.85em; display: block; margin-top: 5px;">(Kuri kipe za QI zikora mu bitaro bya ANN)</span>
+            <span class="flags">🇷🇼</span>
+        </a>
+
+        <a href="qi-am.html" class="btn btn-blue">
+            🟦 የሆስፒታል QI ቡድን (Amharic)<br>
+            <span style="font-weight: normal; font-size: 0.85em; display: block; margin-top: 5px;">(በ ANN ሆስፒታሎች ውስጥ ለሚሰሩ የ QI ቡድኖች)</span>
+            <span class="flags">🇪🇹</span>
+        </a>
+    </div>
+
+    <div id="screen-faculty" class="screen">
+        <button class="btn-back" onclick="navTo('screen-home')">⬅ Back to Home</button>
+        
+        <h2>April 2026 – Faculty Tasks</h2>
+        
+        <div class="alert-box" style="background-color: #f3e5f5; border-color: var(--primary-purple);">
+            <strong>Complete these 5 tasks this month:</strong>
+        </div>
+
+        <ul class="task-list">
+            <li class="task-item">
+                <div class="task-header"><span class="task-icon">🚀</span> 1. Understand Rocket ANN</div>
+                <div class="task-time">⏱ ~10 minutes</div>
+                <p>Watch introduction video and complete the short feedback form.</p>
+                <div class="video-container">
+                    <video controls preload="none">
+                        <source src="videos/Faculty_Rocket_Ann.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <a href="videos/Faculty_Rocket_Ann.mp4" class="action-link" download>📥 Download File</a>
+                <a href="#" class="action-link">👉 📝 Submit Feedback</a>
+            </li>
+
+            <li class="task-item">
+                <div class="task-header"><span class="task-icon">🎉</span> 2. Plan All Babies Day (ABD)</div>
+                <div class="task-time">⏱ ~10 minutes</div>
+                <p>Watch ABD introduction and complete the feedback form.</p>
+                <div class="video-container">
+                    <video controls preload="none">
+                        <source src="videos/ABD_for_faculty.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <a href="videos/ABD_for_faculty.mp4" class="action-link" download>📥 Download File</a>
+                <a href="#" class="action-link">👉 📝 Submit Feedback</a>
+            </li>
+
+            <li class="task-item">
+                <div class="task-header"><span class="task-icon">🎓</span> 3. Tell us your learning needs</div>
+                <div class="task-time">⏱ ~3 minutes</div>
+                <p>Complete the short educational needs survey.</p>
+                <a href="#" class="action-link">👉 📝 Complete Survey</a>
+            </li>
+
+            <li class="task-item">
+                <div class="task-header"><span class="task-icon">🌍</span> 4. Support your hospital teams</div>
+                <div class="task-time">⏱ ~10–20 minutes</div>
+                <p>Ensure your teams watch the Rocket ANN video for QI teams and complete feedback.</p>
+            </li>
+
+            <li class="task-item">
+                <div class="task-header"><span class="task-icon">📅</span> 5. Prepare for April 15 meeting</div>
+                <div class="task-time">⏱ ~20 minutes</div>
+                <p>Identify units to present and remind them.</p>
+            </li>
+        </ul>
+
+        <div class="footer-status">✅ When complete, you have finished April</div>
+    </div>
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>
